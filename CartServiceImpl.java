@@ -1,0 +1,22 @@
+package com.SPORTS.service.impl;
+
+import com.SPORTS.dao.CartDao;
+import com.SPORTS.model.Cart;
+import com.SPORTS.service.CartService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class CartServiceImpl implements CartService {
+
+    @Autowired
+    private CartDao cartDao;
+
+    public Cart getCartById(int cartId) {
+        return cartDao.getCartById(cartId);
+    }
+
+    public void update(Cart cart) {
+        cartDao.update(cart);
+    }
+}

@@ -1,10 +1,12 @@
-package com.niit.Fitness.model;
+package com.SPORTS.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import java.io.Serializable;
+
+
 
 @Entity
 public class BillingAddress implements Serializable{
